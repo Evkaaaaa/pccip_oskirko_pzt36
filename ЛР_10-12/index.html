@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>temkontr</title>
+        <script>
+            function Timer() {
+                var time = new Date;
+                
+                var seconds = time.getSeconds();
+
+                var time = document.getElementById("time");
+                time.value = seconds;
+                alert(time.value);
+            }
+        </script>
+    </head>
+    <body>
+        <script src="main.js"></script>
+        <div class="container-wrapper">
+
+            <label>seconds</label>
+            <input type="text" id="time" />
+            <button onclick="Timer();">Показать год</button>
+            <br><br>
+
+            <textarea id="text" rows="6" cols="30"></textarea><br>
+            <button onclick="printText()">Нажми, чтобы вывести</button><br><br>
+
+            Первоначальный массив<br>
+            <input id="firstArray" type="text" />
+            <button onclick="show();">Вывести</button><br>
+
+            Кол-во элементов кратных 5<br>
+            <input id="addArray" type="text" />
+            <button onclick="add();">Посчитать</button><br><br>
+
+            Рассчитать по формуле<br>
+            <input id="result" type="text"/>
+            <button onclick="calculate();">Рассчитать</button><br><br>
+
+            <label>String 1 (S1)</label>
+            <input type="text" id="S1" /><br> 
+
+            <label>String 2 (S2)</label>
+            <input type="text" id="S2" /><br> 
+
+            <label>Длина строки S2</label>
+            <input type="text" id="length" /><br>
+
+            <label>Символ под индексом 7 в строке S1</label>
+            <input type="text" id="char14" /><br>
+
+            <label>ASCII-код 7-го символа в строке S1</label>
+            <input type="text" id="ascii14" /><br>
+
+            <label>Есть ли слово Гродно?</label>
+            <input type="text" id="replace" /><br>
+
+            <button onclick="output();">Вывести</button><br>
+
+            <label>Браузер</label><br>
+            <button onclick="outputnet();">Вывести</button>
+        </div>
+
+        <script>
+            let text = document.getElementById("text");
+            let y = 0;
+            let i = 7;
+            let x = i +5;
+            let count = 0;
+            
+            function printText() {  
+                while (y < x) {
+                    text.value += "Оскирко Эвелина\n";
+                    y++;
+                }
+            }
+
+            var mas = [1, 2, 3, 4, 5, 6, 15, 8, 9, 10];
+            function show() {
+                document.getElementById("firstArray").value = mas;
+            }
+
+            function add() {
+                while (y<10){
+                if(mas[y] % 5 == 0) {
+                count++;}
+                y++;
+            }
+                document.getElementById("addArray").value = count;
+            }
+        </script>
+
+    </body>
+</html>
