@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Задание по JS вариант 3</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <style>
+        body{
+            background-color: darkslategray;
+            color: aliceblue;
+        }
+        .element2 {
+            font-family: Arial;
+            font-size: 25px;
+            color: rgb(236, 228, 228);
+            border: 1px solid transparent;
+        }
+        .element2:hover {
+            font-family: Verdana;
+            font-size: 25px;
+            color: blue;
+            border: 1px solid green;
+        }
+        </style>
+    </head>
+    <body>
+        <script src="js.js">
+            
+        </script>
+
+        <div id="container-wrapper">
+            <button onclick="changeStyle()">Просмотреть</button>
+            <p id="FIO">Оскирко Эвелина Андреевна</p>
+            <div class="element2" id="element2" onclick="removeElement()">Элемент №2</div>
+            <a href="https://yummyani.me/catalog/item/doktor-stoun" target="_blank" id="link" style="color: aliceblue;">Доктор Стоун</a><br>
+            <img src="Леха.jpg" alt="" id="image1" width="160px"><br>
+            <p>АЛЕКСЕЙ ФЕКЛИИНН</p>
+            <button onclick="openNewWindow()">Открыть новое окно</button>
+        </div>
+    </body>
+</html>
