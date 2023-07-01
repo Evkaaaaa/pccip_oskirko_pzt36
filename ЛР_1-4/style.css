@@ -1,0 +1,47 @@
+body {
+	background-image: url(img/bg.jpg);
+	font-size: 24px;
+	color: white;
+	font-family: monospace;
+}
+
+h1,h2{
+	font-family: impact;
+}
+
+table {
+	width: 25%;
+	font-family: impact;
+	font-size: 13px;
+	border: 2px black;
+	background-color: white;
+	color: black;
+	
+}
+.table th{
+	text-align: "center";
+	
+}
+
+.table td{
+	text-align: "center";
+	
+}
+.form {
+	background-color: green;
+	width: 700px;
+	padding: 30px;
+}
+
+h4{
+	color: orange;
+	font-family: sans-sarif;
+}
+
+.form input[type = "radio"],
+.form input[type = "checkbox"],
+.form input[type = "submit"]{
+	background: none;
+	font-size:20px;
+	
+}
